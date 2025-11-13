@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilo.css">
+  <title>Respostas002</title>
+</head>
+
+<body>
+  <div class="secao">
+    <h1>Exercicios Manipulação de variaveis</h1>
+    <p>Crie um programa para uma pizzaria que leia o valor da conta e divida pela quantidade de pessoas na mesa.</p>
+  </div>
+</body>
+
+<script>
+  let valor = Number(prompt("Valor Total da Compra:"));
+  let qtdPessoas = 3;
+  let valorPorCliente = valor/qtdPessoas;
+
+  alert(`Valor da Conta: R$${valor.toFixed(2)}\nQtd. Pessoas ${qtdPessoas}\nValor por pessoa:${valorPorCliente.toFixed(2)}`)
+</script>
+
+</html>

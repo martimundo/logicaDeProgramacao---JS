@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilo.css">
+  <title>Respostas003</title>
+</head>
+
+<body>
+  <div class="secao">
+    <h1>Exercicios Manipulação de variaveis</h1>
+    <p>Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e valor em 3X</p>
+  </div>
+</body>
+
+<script>
+  let precoProduto = Number(prompt("Valor do Produto:"));
+  let formPagto = alert("Formas de Pagamento\nDébito:\nCrédito(Max: 3X)\nÀ Vista(10% desc)");
+  let descAVista = precoProduto * 0.10;
+  let valorAvista = precoProduto - descAVista;
+  let valorPrazo = precoProduto / 3;
+
+  alert(`Valor do Produto: R$${precoProduto.toFixed(2)}\nValor à vista R$${valorAvista}\nValor em até 3X:R$ ${valorPrazo.toFixed(2)}`)
+</script>
+
+</html>

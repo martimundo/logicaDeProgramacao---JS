@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Exemplo008_JS</title>
+</head>
+
+<body>
+
+  <div class="secao">
+    <h1>Entrada e processamento de Dados</h1>
+    <p>Neste capitulo, foi abordado a entrada, processamento e a saída de dados.</p>
+    <p>Eborar um programa que leia a duração de uma viagem em dias e horas. Calcule e informe a duração total da viagem em número de horas</p>
+    <span>Passos a serem seguidos:</span>
+    <ul>
+      <li>Entrada de dados: ler dois número</li>
+      <li>Processamento: Calcular a taxa</li>
+      <li>Saída: Informar o total a pagar</li>
+    </ul>
+
+  </div>
+</body>
+
+<script>
+  let dias = Number(prompt("Digite Nº de Dias: "));
+  let horas = Number(prompt("Duração da viagem: "));
+  let totalHoras = (dias * 24) + horas;
+  alert(`Total de Horas da viagem ${totalHoras} `);
+
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Exemplo007_JS</title>
+</head>
+
+<body>
+
+  <div class="secao">
+    <h1>Entrada e processamento de Dados</h1>
+    <p>Neste capitulo, foi abordado a entrada, processamento e a saída de dados.</p>
+    <p>Elaborar um programa que leia o valor de um jantar. Calcule e informe o valor da taxa do garçom(10%) e o valor
+      total a ser pago</p>
+    <span>Passos a serem seguidos:</span>
+    <ul>
+      <li>Entrada de dados: ler dois número</li>
+      <li>Processamento: Calcular a taxa</li>
+      <li>Saída: Informar o total a pagar</li>
+    </ul>
+
+  </div>
+</body>
+
+<script>
+  let valor = Number(prompt("Valor Gasto: "));
+  let tx = valor * 0.10;
+  let totalPagar = valor + tx;
+  let totalPessoa = 3;
+  let vlPorPessoa = totalPagar / totalPessoa;
+  alert(`Valor gasto R$${valor.toFixed(2)}\nTaxa: R$${tx.toFixed(2)}\nTotal a pagar: R$${totalPagar.toFixed(2)}\nValor divido por Pessoa: R$${vlPorPessoa.toFixed(2)}`);
+
+</script>
+
+</html>
